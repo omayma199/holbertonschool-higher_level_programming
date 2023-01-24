@@ -9,4 +9,4 @@ def print_reversed_list_integer(my_list=[])
         left += 1
         right -= 1
  
-    return my_list
+    print("{:d}".format(my_list[lists]))
