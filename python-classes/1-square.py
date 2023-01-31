@@ -9,4 +9,4 @@ class Square:
     """Empty class"""
     def __init__(self, size):
         """Initializes the data."""
-        self.size = size
+        self.__size = size
