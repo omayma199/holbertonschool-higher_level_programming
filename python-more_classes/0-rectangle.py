@@ -5,6 +5,6 @@ Defines class rectangle
 """
 
 
-class rectangle:
+class rectangle():
     """Empty class"""
     pass
