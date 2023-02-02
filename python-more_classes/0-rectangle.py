@@ -6,5 +6,7 @@ Defines class rectangle
 
 
 class rectangle():
-    """Empty class"""
+    """
+    Empty class
+    """
     pass
