@@ -2,6 +2,7 @@
 """
 Module 0-rectangle
 Defines class rectangle
+Empty class
 """
 
 
