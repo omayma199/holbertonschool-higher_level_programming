@@ -2,7 +2,7 @@
 """
 Module 1-rectangle
 Contains class Rectangle
-Empty class
+with private attribute width and height
 """
 
 
