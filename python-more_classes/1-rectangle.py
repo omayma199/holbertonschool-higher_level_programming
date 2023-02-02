@@ -6,11 +6,10 @@ with private attribute width and height
 """
 
 
-class Rectangle():
+class Rectangle:
     """
-    Defines empty class rectangle
+    Defines class rectangle with private attribute width and height
     """
-    pass
 
 def __init__(self, width=0, height=0):
         """ Initialize rectangles """
