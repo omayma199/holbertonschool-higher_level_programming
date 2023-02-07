@@ -2,6 +2,6 @@
 """initializate module"""
 
 
-class  BaseGeometry:
+class BaseGeometry:
     """empty file"""
     pass
