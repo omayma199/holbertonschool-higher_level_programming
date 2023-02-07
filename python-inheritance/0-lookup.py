@@ -1,3 +1,12 @@
 #!/usr/bin/python3
+"""
+module for lookup.
+"""
+
+
 def lookup(obj):
-    self.obj = obj
+
+
+
+    
+    return dir(obj)
