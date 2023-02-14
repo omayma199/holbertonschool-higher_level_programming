@@ -3,10 +3,10 @@
 Module-rectangle
 Contains class Rectangle
 """
-from models.base import Base
+from .base import Base
 
 
-class Rectangle(base):
+class Rectangle(Base):
     """
     Defines class rectangle
     """
