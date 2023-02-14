@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """base model class."""
 
+
 class Base:
     """
     The Base Class
@@ -8,6 +9,7 @@ class Base:
         __nb_object : private class atribute
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         if id is not None:
             self.id = id
