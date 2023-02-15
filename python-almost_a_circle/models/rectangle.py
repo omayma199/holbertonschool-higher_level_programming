@@ -79,9 +79,42 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """
+            Define The Area of Rectangle
+        """
         return self.__width * self.__height
 
     def display(self):
+         """
+            Display The Rectangle Using  '#'
+        """
         print("\n"*self.__y, end="")
         for i in range(self.__height):
             print(" "*self.__x + "#"*self.__width)
+
+    def update(self, *args, **kwargs):
+        """
+            Update Multiple Atrr of The Rectangle
+        """
+        if args:
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Make class ti dictionary"""
+        return {'x': self.x,
+                'y': self.y,
+                'id': self.id,
+                'height': self.height,
+                'width': self.width}
