@@ -85,7 +85,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """
+         """
             Display The Rectangle Using  '#'
         """
          print(("\n" * self.__y) +
@@ -100,7 +100,7 @@ class Rectangle(Base):
                                                                  self.__x,
                                                                  self.__y,
                                                                  self.__width,
-                                                                 self.__height)    
+                                                                 self.__height)
 
     def update(self, *args, **kwargs):
         """
