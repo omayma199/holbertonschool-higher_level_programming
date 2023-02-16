@@ -24,20 +24,21 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """Update the Square.
         """
+        i = 0
         if args:
-            if len(args) >= 1:
-                self.id = args[0]
-            if len(args) >= 2:
-                self.width = args[1]
-            if len(args) >= 3:
-                self.height = args[2]
-            if len(args) >= 4:
-                self.x = args[3]
-            if len(args) >= 5:
-                self.y = args[4]
+            for arg in args:
+                if i == 0:
+                    self.id = arg
+                if i == 1:
+                    self.size = arg
+                if i == 2:
+                    self.x = arg
+                if i == 3:
+                    self.y = arg
+                i += 1
         else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+            for arg in kwargs:
+                setattr(self, arg, kwargs.get(arg))
 
     def to_dictionary(self):
         """Return the dictionary representation of the Square."""
