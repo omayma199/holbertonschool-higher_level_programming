@@ -1,2 +1,2 @@
--- create the database 
-CREATE DATABASE hbtn_0c_0;
+-- Create A DATABASE
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
