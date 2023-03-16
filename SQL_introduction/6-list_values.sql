@@ -1,2 +1,2 @@
--- display all rows of the table from the database in your MySQL server
-SELECT * FROM first_tabl
+-- list all row in a table
+SELECT * FROM first_table;
