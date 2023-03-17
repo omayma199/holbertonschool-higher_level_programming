@@ -1,18 +1,29 @@
 #!/usr/bin/python3
-# Module For Connecting To MySQL database
-
+"""
+Module list state
+"""
+import sys
 import MySQLdb
 
-from sys import argv
+
+def main():
+    conn = MySQLdb.connect(
+                        host="localhost",
+                        port=3306,
+                        user=sys.argv[1],
+                        passwd=sys.argv[2],
+                        db=sys.argv[3],
+                        charset="utf8"
+                            )
+    cur = conn.cursor()
+    query = "SELECT id,name FROM states ORDER by id ASC"
+    cur.execute(query)
+    row = cur.fetchall()
+    for r in row:
+        print(r)
+    cur.close()
+    conn.close()
 
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                         passwd=argv[2], db=argv[3], charset="utf8")
-    c = db.cursor()
-    c.execute('SELECT * FROM states ORDER BY id ASC')
-    for rows in c.fetchall():
-        print(rows)
-
-    c.close()
-    db.close()
+    main()
