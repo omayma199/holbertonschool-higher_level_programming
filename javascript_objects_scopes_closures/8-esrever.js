@@ -1,8 +1,8 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-    const arr = [];
+    const newAra = [];
     for (let i = list.length - 1; i >= 0; i--) {
-      arr.push(list[i]);
+      newAra.push(list[i]);
     }
-    return list;
+    return newAra;
   };
