@@ -1,7 +1,7 @@
 #!/usr/bin/node
 function nextBiggest (arr) {
   let max = 0; let result = 0;
-  
+ 
   for (const value of arr) {
     const nr = Number(value);
  
@@ -11,8 +11,8 @@ function nextBiggest (arr) {
       result = nr;
     }
   }
-  
+
   return result;
 }
- 
+
 console.log(nextBiggest(process.argv));
