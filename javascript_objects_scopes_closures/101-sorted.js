@@ -1,15 +1,9 @@
 #!/usr/bin/node
+// function that returns the number of occurrences in a list
 
-'use strict';
-
-const dict = require('./101-data').dict;
-const newDict = {};
-
-Object.keys(dict).map(function (key, index) {
-  if (newDict[dict[key]] === undefined) {
-    newDict[dict[key]] = [];
-  }
-  newDict[dict[key]].push(key);
+const originalList = require('./100-data').list;
+console.log(originalList);
+const mappedList = originalList.map (function (e, index) {
+  return (e * index);
 });
-
-console.log(newDict);
+console.log(mappedList);

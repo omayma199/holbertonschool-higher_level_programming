@@ -1,15 +1,8 @@
 #!/usr/bin/node
+// script that concats 2 files
 
-'use strict';
-
-const dict = require('./101-data').dict;
-const newDict = {};
-
-Object.keys(dict).map(function (key, index) {
-  if (newDict[dict[key]] === undefined) {
-    newDict[dict[key]] = [];
-  }
-  newDict[dict[key]].push(key);
-});
-
-console.log(newDict);
+const args = process.argv.slice(2);
+const file = require('fs');
+const contentA = file.readFileSync('./' + args[0]);
+const contentB = file.readFileSync('./' + args[1]);
+file.writeFileSync('./' + args[2], contentA + contentB);
